@@ -77,6 +77,30 @@ AI 에이전트를 이용한 개발 작업 시 다음 사항들을 특히 주의
 - API 키를 .env 파일로 이동
 - .env 파일을 .gitignore에 추가
 - 환경 변수를 통해 API 키에 접근
+- input 프로퍼티로 관리
+```jsonc
+{
+    "inputs": [
+        {
+          "type": "promptString",
+          "id": "figma-key",
+          "description": "이곳에-키-추가",
+          "password": true
+        }
+    ],
+    "servers": {
+        "Framelink Figma MCP": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "figma-developer-mcp",
+                "--figma-api-key=${input:figma-key}",
+                "--stdio"
+            ]
+        }
+    }
+}
+```
 
 ## 코드 품질 관리
 
