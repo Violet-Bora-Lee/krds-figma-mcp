@@ -65,7 +65,7 @@ AI 에이전트를 이용한 개발 작업 시 다음 사항들을 특히 주의
             "args": [
                 "-y",
                 "figma-developer-mcp",
-                "--figma-api-key=figd_HFM-l_0kOMVk_0rIkyH6tyMMbykJvnjli-hjo-FB", // API 키 노출 문제
+                "--figma-api-key=figd_HFM-l_0kOMVk_0rIkyH6tyMMbykJvnjli-hjo-FB", // API 키 노출 문제(This key is revoked :p)
                 "--stdio"
             ]
         }
